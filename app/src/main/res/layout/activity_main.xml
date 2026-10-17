@@ -85,7 +85,7 @@
             android:id="@+id/etEmail"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:hint="Email"
+            android:hint="Ingresa tu email"
             android:textColorHint="@color/text_hint"
             android:textColor="@color/black"
             android:background="@color/input_bg"
