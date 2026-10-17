@@ -70,7 +70,7 @@
             android:id="@+id/etUser"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:hint="Nombre de usuario"
+            android:hint="Ingresa tu nombre de usuario "
             android:textColorHint="@color/text_hint"
             android:textColor="@color/black"
             android:background="@color/input_bg"
