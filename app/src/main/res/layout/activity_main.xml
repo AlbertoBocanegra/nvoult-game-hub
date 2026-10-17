@@ -128,7 +128,7 @@
             android:id="@+id/btnLogin"
             android:layout_width="0dp"
             android:layout_height="55dp"
-            android:text="Inicio de sesión"
+            android:text="Realiza inicio de sesión"
             android:textColor="@color/white"
             android:backgroundTint="@color/black"
             android:layout_marginTop="28dp"
