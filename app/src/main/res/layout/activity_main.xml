@@ -141,7 +141,7 @@
             android:id="@+id/btnRegister"
             android:layout_width="0dp"
             android:layout_height="55dp"
-            android:text="Registro"
+            android:text="Realizar registro"
             android:textColor="@color/white"
             android:backgroundTint="@color/black"
             android:layout_marginTop="12dp"
