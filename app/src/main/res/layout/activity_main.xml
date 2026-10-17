@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/bg_dark">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <!-- Logo y Título -->
+        <LinearLayout
+            android:id="@+id/layoutLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_launcher_foreground"
+                android:background="@color/white"
+                android:padding="4dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NVOULT"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GAME HUB"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Texto Bienvenido -->
+        <TextView
+            android:id="@+id/tvBienvenido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="60dp"
+            app:layout_constraintTop_toBottomOf="@id/layoutLogo"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <!-- Campo Usuario -->
+        <EditText
+            android:id="@+id/etUser"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Nombre de usuario"
+            android:textColorHint="@color/text_hint"
+            android:textColor="@color/black"
+            android:background="@color/input_bg"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/tvBienvenido"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Campo Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:textColorHint="@color/text_hint"
+            android:textColor="@color/black"
+            android:background="@color/input_bg"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/etUser"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Campo Contraseña -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textColorHint="@color/text_hint"
+            android:textColor="@color/black"
+            android:background="@color/input_bg"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/etEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Olvidaste contraseña -->
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Olvidaste tu contraseña?"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/etPassword"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <!-- Botón Inicio de sesión -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:text="Inicio de sesión"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="28dp"
+            app:layout_constraintTop_toBottomOf="@id/tvForgotPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Botón Registro -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:text="Registro"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/btnLogin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050814"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header / Perfil -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_launcher_foreground"
+                android:background="#1E1E1E"
+                android:padding="4dp"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AlbrttVoid"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🏆 136"
+                        android:textColor="#FFD700"
+                        android:textSize="12sp"
+                        android:layout_marginEnd="12dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🎮 2,642"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="#1E1E1E"
+                android:padding="6dp"
+                android:src="@android:drawable/ic_menu_manage"/>
+        </LinearLayout>
+
+        <!-- Buscador -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/input_bg"
+            android:hint="🔍 Buscar juego..."
+            android:textColorHint="@color/text_hint"
+            android:textColor="@color/black"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Destacado -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#1B263B"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:padding="16dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pokemon Unite celebra su lanzamiento"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="El juego se centra en combates estratégicos en tiempo real..."
+                android:textColor="#CCCCCC"
+                android:textSize="12sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Publicaciones Oficiales -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Publicaciones oficiales de tus juegos"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginTop="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Icono Call of Duty -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginEnd="16dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="#333333"
+                        android:src="@drawable/ic_launcher_foreground"/>
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:text="Call of Duty"
+                        android:textColor="#FFFFFF"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+
+                <!-- Icono Brawl Stars -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginEnd="16dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="#333333"
+                        android:src="@drawable/ic_launcher_foreground"/>
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:text="Brawl Stars"
+                        android:textColor="#FFFFFF"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+
+                <!-- Icono Fortnite -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginEnd="16dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="#333333"
+                        android:src="@drawable/ic_launcher_foreground"/>
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:text="Fortnite"
+                        android:textColor="#FFFFFF"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Vuelve a tus juegos -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vuelve a tus juegos"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:background="#1E1E1E"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:background="#1E1E1E"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

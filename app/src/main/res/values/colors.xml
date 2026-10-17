@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="bg_dark">#050814</color>
+    <color name="blue_accent">#3b48df</color>
+    <color name="input_bg">#999999</color>
+    <color name="text_hint">#333333</color>
+</resources>
