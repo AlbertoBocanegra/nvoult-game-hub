@@ -100,7 +100,7 @@
             android:id="@+id/etPassword"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:hint="Contraseña"
+            android:hint="Ingresa tu contraseña"
             android:inputType="textPassword"
             android:textColorHint="@color/text_hint"
             android:textColor="@color/black"
