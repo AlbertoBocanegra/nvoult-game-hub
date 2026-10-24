@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#050814"
+    android:background="@drawable/background_gradient"
     android:fillViewport="true">
 
     <LinearLayout
@@ -11,7 +12,6 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Header / Perfil -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -19,13 +19,12 @@
             android:gravity="center_vertical"
             android:layout_marginTop="8dp">
 
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:scaleType="centerCrop"
                 android:src="@drawable/ic_launcher_foreground"
-                android:background="#1E1E1E"
-                android:padding="4dp"
-                android:scaleType="centerCrop"/>
+                app:shapeAppearanceOverlay="@style/CircularImage" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -73,7 +72,6 @@
                 android:src="@android:drawable/ic_menu_manage"/>
         </LinearLayout>
 
-        <!-- Buscador -->
         <EditText
             android:layout_width="match_parent"
             android:layout_height="45dp"
@@ -84,7 +82,6 @@
             android:paddingHorizontal="16dp"
             android:layout_marginTop="20dp"/>
 
-        <!-- Destacado -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="180dp"
@@ -113,7 +110,6 @@
                 android:layout_marginTop="4dp"/>
         </LinearLayout>
 
-        <!-- Publicaciones Oficiales -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -126,89 +122,201 @@
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scrollbars="none"
-            android:layout_marginTop="12dp">
+            android:layout_marginTop="12dp"
+            android:scrollbars="none">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <!-- Icono Call of Duty -->
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_marginEnd="16dp">
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:background="#333333"
-                        android:src="@drawable/ic_launcher_foreground"/>
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:background="#2A2A2A"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_launcher_foreground" />
 
                     <TextView
-                        android:layout_width="65dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
                         android:text="Call of Duty"
                         android:textColor="#FFFFFF"
-                        android:textSize="10sp"
-                        android:gravity="center"
-                        android:layout_marginTop="4dp"/>
+                        android:textSize="12sp" />
                 </LinearLayout>
 
-                <!-- Icono Brawl Stars -->
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_marginEnd="16dp">
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:background="#333333"
-                        android:src="@drawable/ic_launcher_foreground"/>
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:background="#2A2A2A"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_launcher_foreground" />
 
                     <TextView
-                        android:layout_width="65dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
                         android:text="Brawl Stars"
                         android:textColor="#FFFFFF"
-                        android:textSize="10sp"
-                        android:gravity="center"
-                        android:layout_marginTop="4dp"/>
+                        android:textSize="12sp" />
                 </LinearLayout>
 
-                <!-- Icono Fortnite -->
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_marginEnd="16dp">
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:background="#333333"
-                        android:src="@drawable/ic_launcher_foreground"/>
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:background="#2A2A2A"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_launcher_foreground" />
 
                     <TextView
-                        android:layout_width="65dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
                         android:text="Fortnite"
                         android:textColor="#FFFFFF"
-                        android:textSize="10sp"
-                        android:gravity="center"
-                        android:layout_marginTop="4dp"/>
+                        android:textSize="12sp" />
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:background="#2A2A2A"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_launcher_foreground" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Minecraft"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:background="#2A2A2A"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_launcher_foreground" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Free Fire"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:background="#2A2A2A"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_launcher_foreground" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Roblox"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:background="#2A2A2A"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_launcher_foreground" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Valorant"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:background="#2A2A2A"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_launcher_foreground" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="League of Legends"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
             </LinearLayout>
         </HorizontalScrollView>
 
-        <!-- Vuelve a tus juegos -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -238,6 +346,5 @@
                 android:background="#1E1E1E"
                 android:layout_marginStart="8dp"/>
         </LinearLayout>
-
     </LinearLayout>
 </ScrollView>
