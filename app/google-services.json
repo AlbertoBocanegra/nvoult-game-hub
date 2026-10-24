@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "23316502946",
+    "project_id": "nvoultgamehub",
+    "storage_bucket": "nvoultgamehub.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23316502946:android:9eab812e1ec0236f6b3afb",
+        "android_client_info": {
+          "package_name": "com.example.nvoulltgamehub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVueEdQukIwGUcg_fFiyk3bz1b_P2nnZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
