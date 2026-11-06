@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
                     val titulo = document.getString("title")
                     Log.d("FIREBASE_TEST", "¡Conexión exitosa! Juego encontrado: $titulo")
                 } else {
-                    Log.d("FIREBASE_TEST", "El documento 'juego_01' no existe en la colección")
+                    Log.d("FIREBASE_TEST", "El documento 'juego_01' no existe en la base")
                 }
             }
             .addOnFailureListener { exception ->
